@@ -98,7 +98,7 @@ function App(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   sectionContainer: {
-    marginTop: 32,
+    marginTop: 32, // 안드로이드의 dip(density-independent pixel)단위를 사용한다.
     paddingHorizontal: 24,
   },
   sectionTitle: {
