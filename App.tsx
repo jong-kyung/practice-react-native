@@ -7,7 +7,7 @@ import Orders from './src/pages/Order';
 import Delivery from './src/pages/Delivery';
 import {useState} from 'react';
 import SignIn from './src/pages/SignIn';
-import SignUp from './src/pages/SinghUp';
+import SignUp from './src/pages/SignUp';
 
 export type LoggedInParamList = {
   Orders: undefined;
@@ -26,7 +26,7 @@ const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn, setLoggedIn] = useState(false);
   return (
     <NavigationContainer>
       {isLoggedIn ? (
